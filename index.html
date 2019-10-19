@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Skranji&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Anata Cars Gallery</title>
   </head>
@@ -29,7 +30,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-left">
         <img src="images/lance-asper-N9Pf2J656aQ-unsplash.jpg" alt="">
         <div>
           <h3>Anata Car Two</h3>
@@ -38,7 +39,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-right">
         <img src="images/peter-broomfield-m3m-lnR90uM-unsplash.jpg" alt="">
         <div>
           <h3>Anata Car Three</h3>
@@ -47,7 +48,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-left">
         <img src="images/dhiva-krishna-X16zXcbxU4U-unsplash.jpg" alt="">
         <div>
           <h3>Anata Car Four</h3>
@@ -56,7 +57,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-right">
         <img src="images/goh-rhy-yan-f_SDCASisgs-unsplash.jpg" alt="">
         <div>
           <h3>Anata Car Five</h3>
@@ -65,5 +66,12 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
   </body>
 </html>
